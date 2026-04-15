@@ -17,7 +17,7 @@ export default function Photos() {
   return (
     <section
       id="photos"
-      className="pt-16 bg-black text-[#596e79]"
+      className="pt-16 text-[#596e79] poj-blur-bg poj-blur-bg-2 section-boundary"
       onClick={closeImage}
     >
       <div className="flex overflow-x-scroll">

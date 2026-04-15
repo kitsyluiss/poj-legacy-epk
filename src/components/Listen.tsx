@@ -88,7 +88,10 @@ function MobilePortraitCarousel() {
   const currentMember = members[activeIndex];
 
   return (
-    <section id="listen" className="py-16 px-3 text-white">
+    <section
+      id="listen"
+      className="py-16 px-3 text-white poj-blur-bg poj-blur-bg-3 poj-blur-bg-sticky section-boundary"
+    >
       <div className="mx-auto max-w-screen-lg">
         <h2 className="text-center text-4xl text-[#f0ece2]">Meet P-O-J Legacy</h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-[#d9d4ca]">
@@ -211,7 +214,10 @@ export default function Listen() {
 
   // Desktop scroll-based layout
   return (
-    <section id="listen" className="py-16 px-3 text-white">
+    <section
+      id="listen"
+      className="py-16 px-3 text-white poj-blur-bg poj-blur-bg-3 poj-blur-bg-sticky section-boundary"
+    >
       <div className="mx-auto max-w-screen-lg">
         <h2 className="text-center text-4xl text-[#f0ece2]">Meet P-O-J Legacy</h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-[#d9d4ca]">
