@@ -1,6 +1,6 @@
 export default function Biography() {
   return (
-    <section id="biography" className="py-16 px-2 bg-[#f0ece2] text-[#596e79]">
+    <section id="biography" className="py-16 px-2 bg-black text-[#f0ece2]">
       <div className="max-w-screen-md mx-auto space-y-4">
         <h2 className="text-3xl text-center">The Legacy</h2>
         <p>

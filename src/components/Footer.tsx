@@ -4,7 +4,7 @@ import { artistBio } from "./ArtistInformation";
 
 export default function Footer() {
   return (
-    <section className="text-white py-24 space-y-16 flex flex-col items-center">
+    <section className="text-white py-24 space-y-16 flex flex-col items-center poj-blur-bg poj-blur-bg-4">
       <p className="text-center text-3xl">Book {artistBio.name}</p>
       <SocialMedia />
       <div className="text-center space-y-1">
