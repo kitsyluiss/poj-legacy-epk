@@ -83,4 +83,12 @@ export const members = [
     image: "/photos/gian.jpg",
     fallbackImage: "/photos/poj-logo.jpg",
   },
+  {
+    name: "Bryanne",
+    role: "Pianist",
+    intro:
+      "Brings melodic richness and harmonic depth with elegant piano arrangements that elevate every song.",
+    image: "/photos/bryanne.jpeg",
+    fallbackImage: "/photos/poj-logo.jpg",
+  },
 ];
