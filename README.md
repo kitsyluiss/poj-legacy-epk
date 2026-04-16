@@ -2,7 +2,7 @@
 
 This artist electronic press kit (epk) template was made by Zack Hanni using Vite, React, Typescript, and Tailwind.
 
-LIVE DEMO - https://artist-epk.vercel.app/
+LIVE DEMO - https://poj-legacy-epk.vercel.app/
 
 ## Getting started
 
