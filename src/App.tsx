@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Listen from "./components/Listen";
 import Nav from "./components/Nav";
 import Photos from "./components/Photos";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         </main>
         <Footer />
       </header>
+      <Analytics />
     </div>
   );
 }
