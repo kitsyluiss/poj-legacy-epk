@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Listen from "./components/Listen";
 import Nav from "./components/Nav";
 import Photos from "./components/Photos";
+import Videos from "./components/Videos";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Photos />
           <Biography />
           <Listen />
+          <Videos />
           <BookBand />
         </main>
         <Footer />
