@@ -8,6 +8,7 @@ export default function Nav() {
   const navItems = [
     { name: "Photos", link: "#photos" },
     { name: "Biography", link: "#biography" },
+    { name: "Videos", link: "#videos" },
     { name: "Book", link: "#book" },
     { name: "Members", link: "#listen" },
   ];

@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Listen from "./components/Listen";
 import Nav from "./components/Nav";
 import Photos from "./components/Photos";
+import Videos from "./components/Videos";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Photos />
           <Biography />
           <Listen />
+          <Videos />
           <BookBand />
         </main>
         <Footer />
