@@ -1,4 +1,5 @@
 import "./App.css";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Biography from "./components/Biography";
 import BookBand from "./components/BookBand";
 import Footer from "./components/Footer";
@@ -7,10 +8,12 @@ import Listen from "./components/Listen";
 import Nav from "./components/Nav";
 import Photos from "./components/Photos";
 import Videos from "./components/Videos";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
     <div className="App bg-black">
+      <SpeedInsights />
       <header className="App-header">
         <Nav />
         <main className="pt-16">
@@ -23,6 +26,7 @@ export default function App() {
         </main>
         <Footer />
       </header>
+      <Analytics />
     </div>
   );
 }
