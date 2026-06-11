@@ -35,11 +35,10 @@ export const photos = [
 
 // Member showcase section
 export const members = [
-  {
+{
     name: "Piwee",
-    role: "Lead Vocalist",
-    intro:
-      "The voice and heart of P-O-J Legacy, carrying the emotional spirit of Jeremiah to today's stage.",
+    role: "Lead Vocalist (In Memoriam)",
+    intro: "The eternal voice and heart of P-O-J Legacy. We proudly carry Piwee's memory and the emotional spirit of Jeremiah to today's stage.",
     image: "/photos/piwee.jpg",
     fallbackImage: "/photos/poj-logo.jpg",
   },
