@@ -37,7 +37,7 @@ export const photos = [
 export const members = [
 {
     name: "Piwee",
-    role: "Lead Vocalist and Former Band Leader of Jeremiah Full Band",
+    role: "Former Band Leader of Jeremiah Full Band",
     intro: "Forever Remembered: Piwee's passion for music and unwavering dedication shaped the identity of this band. As a former member of the original Jeremiah boy band, he left an enduring mark on everyone who had the privilege of hearing him perform. Today, P-O-J Legacy Band proudly carries forward the legacy he created, honoring his memory through every stage, every performance, and every song.",
     image: "/photos/piwee.jpg",
     fallbackImage: "/photos/poj-logo.jpg",
