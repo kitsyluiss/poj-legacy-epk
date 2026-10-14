@@ -1,101 +1,140 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Root design system - Deep OLED Obsidian & Warm Champagne */
 html {
-  scroll-behavior: smooth;
-  background-color: black;
+  background-color: #070709;
+  color: #f5f2eb;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  -webkit-overflow-scrolling: touch;
+  background-color: #070709;
+  color: #f5f2eb;
+  overflow-x: hidden;
 }
 
-.poj-blur-bg {
-  position: relative;
-  isolation: isolate;
+/* Lenis Smooth Scroll Engine */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
   overflow: hidden;
 }
 
-.poj-blur-bg-sticky {
-  overflow: visible;
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
-.poj-blur-bg > * {
-  position: relative;
-  z-index: 1;
-}
-
-.poj-blur-bg::before {
-  content: "";
-  position: absolute;
+/* Tactile Analog Film Grain - Subtle 2.5% opacity for organic vinyl warmth */
+.grain-overlay {
+  position: fixed;
   inset: 0;
-  background-image: var(--poj-bg-image);
-  background-size: 120%;
-  background-position: center;
-  filter: blur(14px) brightness(0.4);
-  clip-path: inset(0);
-  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-.poj-blur-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  clip-path: inset(0);
-  z-index: 0;
+/* High-End Agency "Double-Bezel" (Nested Architecture) */
+.double-bezel-outer {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1.75rem;
+  padding: 0.375rem;
 }
 
-.poj-blur-bg-1 {
-  --poj-bg-image: url("/photos/pojband.png");
+.double-bezel-inner {
+  background: #0f1015;
+  border-radius: calc(1.75rem - 0.375rem);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.poj-blur-bg-2 {
-  --poj-bg-image: url("/photos/pojband-2.jpg");
+/* Clean Editorial Text Gradients (Single Accent: Warm Champagne to Metallic Gold) */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f2eb 40%, #e0c57b 75%, #c89b3c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.poj-blur-bg-3 {
-  --poj-bg-image: url("/photos/pojband-3.jpg");
+
+
+/* Nested Island Button */
+.island-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 9999px;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: all 0.4s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-.poj-blur-bg-4 {
-  --poj-bg-image: url("/photos/pojband-4.jpg");
+.island-btn:active {
+  transform: scale(0.98);
 }
 
-.section-boundary {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+.island-btn-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-@media (max-width: 767px) and (orientation: portrait) {
-  #listen {
-    scroll-margin-top: 80px;
-  }
-
-  #listen article {
-    scroll-margin-top: 96px;
-  }
+.island-btn:hover .island-btn-icon-wrapper {
+  transform: translateX(2px) translateY(-1px);
 }
 
-.hide {
-  transform: translateX(100px);
-  opacity: 0;
-  transition: 300ms;
+/* Minimal Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
 
-.show-bot {
-  transform: translateY(0);
-  opacity: 1;
-  transition: 600ms;
+::-webkit-scrollbar-track {
+  background: #070709;
 }
 
-.hide-bot {
-  transform: translateY(100px);
-  opacity: 0;
-  transition: 300ms;
+::-webkit-scrollbar-thumb {
+  background: #1e2029;
+  border-radius: 9999px;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c89b3c;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
